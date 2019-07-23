@@ -31,6 +31,8 @@ namespace HelloDevOps.UITest
             AppResult[] results = app.WaitForElement(c => c.Marked("Welcome to Xamarin.Forms!"));
             app.Screenshot("Welcome screen.");
 
+            app.Repl();
+
             Assert.IsTrue(results.Any());
         }
     }
