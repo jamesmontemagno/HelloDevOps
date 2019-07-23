@@ -10,7 +10,10 @@ namespace HelloDevOps.UITest
         {
             if (platform == Platform.Android)
             {
-                return ConfigureApp.Android.StartApp();
+                return ConfigureApp
+                    .Android
+                    .ApkFile("Binaries/com.companyname.HelloDevOps.apk")
+                    .StartApp();
             }
 
             return ConfigureApp.iOS.StartApp();
