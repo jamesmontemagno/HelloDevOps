@@ -17,7 +17,7 @@ namespace HelloDevOps.UITest
                 return ConfigureApp
                     .Android        
                     .ApkFile("C:/Users/jamont/source/repos/HelloDevOps/Binaries/com.companyname.HelloDevOps.apk")
-                    .StartApp(AppDataMode.DoNotClear);
+                    .StartApp();
             }
 
             return ConfigureApp.iOS.StartApp();
