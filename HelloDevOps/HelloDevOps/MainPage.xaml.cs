@@ -21,7 +21,7 @@ namespace HelloDevOps
         int count = 0;
         private void Button_Clicked(object sender, EventArgs e)
         {
-            ((Button)sender).Text = $"You clicked: {count++}";
+            ((Button)sender).Text = $"You clicked: {++count}";
         }
     }
 }
